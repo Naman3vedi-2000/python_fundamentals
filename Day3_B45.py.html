@@ -1,0 +1,209 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+Introduction to list data types:
+
+
+# In[ ]:
+
+
+Overview: A list is a collection of items in a particular order.
+    
+Classification: It is classification as an mutable datatype (which we can edit or alter)
+    
+Declaration of a list ------> []    
+
+
+# In[ ]:
+
+
+
+
+
+# In[7]:
+
+
+friends = ['joey', 'ross', 'monica', 'chandler', 'pheebs','rachel']
+
+
+# In[8]:
+
+
+print(friends)
+
+
+# In[9]:
+
+
+type(friends)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+Case 1: How to add new element to the list.    
+
+
+# In[ ]:
+
+
+#req: i want to add naman to the above list...
+
+
+# In[10]:
+
+
+friends.append('naman')
+
+
+# In[11]:
+
+
+print(friends)
+
+
+# In[ ]:
+
+
+#req: i want to add hrishika to the above list...
+
+
+# In[12]:
+
+
+friends.append('hrishika')
+print(friends)
+
+
+# In[ ]:
+
+
+#req: i want to access joey name in the output
+
+
+# In[ ]:
+
+
+Introduction to Indexing: It is a process of list tracking and indexing will always start from 0.
+
+
+# In[13]:
+
+
+print(friends[0])
+
+
+# In[ ]:
+
+
+#req: i want to access chandler name in the output
+
+
+# In[14]:
+
+
+print(friends[3])
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+Case 2: How to modify the elements in the list.
+
+
+# In[ ]:
+
+
+#req: i want to replace/modify naman with rushabh in the above list...
+
+
+# In[16]:
+
+
+friends[6] = 'rushabh'
+
+
+# In[17]:
+
+
+print(friends)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+Case 3: How to delete the elements from the list.
+
+
+# In[18]:
+
+
+Permanent Approach #req: i want to delete pheebs name from the list
+
+
+# In[19]:
+
+
+del friends[4]
+
+
+# In[20]:
+
+
+print(friends)
+
+
+# In[ ]:
+
+
+Temporary Approach for deleting the elements from the list using 'temp' variable.
+
+Pop up will be creating a carbon copy of the deleted items and will be saving in the variable that has been assigned.
+
+By default pop up will be deleting the last item from the list.
+
+
+# In[22]:
+
+
+print(friends)
+
+
+# In[23]:
+
+
+x = friends.pop()
+
+
+# In[24]:
+
+
+print(friends)
+
+
+# In[ ]:
+
+
+get_ipython().set_next_input('Interview Question:- What is the difference between delete and pop method in a list');get_ipython().run_line_magic('pinfo', 'list')
+
