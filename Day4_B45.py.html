@@ -1,0 +1,239 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+Continuation with list:
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+Organising the list datatype:
+
+
+# In[1]:
+
+
+cars = ['suzuki', 'kia', 'tata', 'toyota', 'audi', 'bmw', 'landrover', 'benz']
+
+
+# In[2]:
+
+
+print(cars)
+
+
+# In[3]:
+
+
+type(cars)
+
+
+# In[ ]:
+
+
+
+
+
+# In[4]:
+
+
+#req: i want to organise the above cars in alphabetical order....A - Z order!
+
+
+# In[ ]:
+
+
+2 Approaches:
+    1. Temporaray approach: We will have the original order of decleration.
+    2. Permanent approach: the changes are applied permanently
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+#1. Temp Approach ----> sorted
+
+
+# In[6]:
+
+
+print(sorted(cars))
+
+
+# In[7]:
+
+
+print(cars)  #original list
+
+
+# In[ ]:
+
+
+#2. Permanent Approach
+
+
+# In[9]:
+
+
+cars.sort() #the changes are applied permanently
+
+
+# In[10]:
+
+
+print(cars)
+
+
+# In[11]:
+
+
+print(cars)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+#req: I want to know the total number of elements in the list
+
+
+# In[12]:
+
+
+len(cars)
+
+
+# In[ ]:
+
+
+#req: i want to print the list in the reverse order...
+
+
+# In[13]:
+
+
+print(cars)
+
+
+# In[14]:
+
+
+cars.reverse() #reverse order
+
+
+# In[15]:
+
+
+print(cars)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+Introduction to 'slicing' of list
+
+
+# In[ ]:
+
+
+# General Syntax: 
+
+
+# In[ ]:
+
+
+variable[startvalue:stopvalue:stepcount]
+
+
+# In[17]:
+
+
+students = ['kiran', 'kumar', 'mahreen', 'divya', 'naveen', 'abdul', 'david', 'karthik']
+
+
+# In[18]:
+
+
+print(students)
+
+
+# In[ ]:
+
+
+Note: Last value is always exclusive.
+Note2: to include the last value do increment the number by 1    
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+#req: to include kiran and kumar in a slice
+
+
+# In[19]:
+
+
+print(students[0:1])
+
+
+# In[20]:
+
+
+print(students[0:2])
+
+
+# In[21]:
+
+
+print(students[2:4])
+
+
+# In[22]:
+
+
+print(students[4:6])
+
+
+# In[23]:
+
+
+print(students[6:8])
+
+
+# In[ ]:
+
+
+
+
